@@ -4,7 +4,7 @@ Built for Arduino, distilled from C.
 
 #include <Adafruit_NeoPixel.h>
 
-int PIN = 6;
+int PIN = 7;
 int speet = 3;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(9, PIN);
@@ -74,7 +74,7 @@ void forwardColorWipe(uint32_t color, int wait) {
 }
 
 void backwardColorWipe(uint32_t color, int wait) {
-  for(uint16_t i = 9; i > 0; i--) {
+  for(uint16_t i = 9; i >= 0; i--) {
     strip.setPixelColor(i, color);
     strip.show();
     delay(wait);
