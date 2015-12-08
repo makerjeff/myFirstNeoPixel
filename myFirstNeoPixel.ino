@@ -10,9 +10,9 @@ Built for Arduino, distilled from C.
 int PIN = 7;
 int speet = 3;
 
-int red = 100;
-int green = 10;
-int blue = 100;
+int red = 50;
+int green = 0;
+int blue = 0;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(9, PIN);
 
